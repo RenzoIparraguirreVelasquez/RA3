@@ -12,7 +12,7 @@
 
 </head>
 
-<body>
+<body style="background-color: #222; font-family: Arial, Helvetica, sans-serif; color: #ccc; font-size: 16px; margin: 30px;">
 
     <header>
         <nav>
@@ -41,8 +41,8 @@
                     consectetur, adipisicing elit. Eius iste laborum cum assumenda, cumque
                     mollitia ut laudantium, consequuntur veritatis quaerat, accusantium suscipit quisquam incidunt
                     porro! Cum voluptatum nemo possimus laudantium.</p>
-                <img src="./Img/rectangle-gemini-google-icon-symbol-logo-free-png.webp" title="Logo de la IA Gemini" alt="Esto es un logo de la IA Gemini"
-                    width="100" height="100">
+                <img src="./Img/rectangle-gemini-google-icon-symbol-logo-free-png.webp" title="Logo de la IA Gemini"
+                    alt="Esto es un logo de la IA Gemini" width="100" height="100">
 
             </article>
             <article>
@@ -56,7 +56,34 @@
 
             </article>
         </section>
-        <section></section>
+        <section>
+            <h2>Deixa la teva valoració</h2>
+            <form action="submit" method="POST">
+                <label for="username">Nom:</label>
+                <input type="text" name="username" placeholder="Escriu el teu nom">
+                <br><br>
+                <label for="correo electronico">Correu electrònic:</label>
+                <input type="email" name="correo electronico" placeholder="exemple@gmail.com">
+                <br><br>
+                <label for="IA">Quina IA vols valorar?</label>
+                <select name="IA">
+                    <option value="A">ChatGPT</option>
+                    <option value="B">Gemini</option>
+                    <option value="C">Claude</option>
+                </select>
+                <p>Com valores aquesta IA?</p>
+                <input type="radio" name="opcion" value="opcion1"> Excel-lent
+                <input type="radio" name="opcion" value="opcion2"> Bona
+                <input type="radio" name="opcion" value="opcion3"> Millorable
+                <p>Comentari:</p>
+                <textarea name="mensaje" rows="4" cols="40" placeholder="Escriu aquí els teus comentaris..."></textarea>
+                <br><br>
+                <input type="checkbox" name="opciones" value="opcion1"> Vull rebre novetats sobre IA
+                <br><br>
+                <input type="submit">
+
+            </form>
+        </section>
     </main>
     <footer></footer>
 
